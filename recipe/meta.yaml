@@ -1,13 +1,13 @@
 {% set name = "array2gif" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "d8c9ca4b7656f4016c578e6b0f87daf47114f5456db2fceece896be5d173e9f0" %}
+{% set version = "1.0.3" %}
+{% set sha256 = "bda921f71366246e08235131aefa9b6272c168d886babae71ed4509be884c370" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/tanyaschlusser/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
