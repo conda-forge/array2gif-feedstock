@@ -1,6 +1,6 @@
 {% set name = "array2gif" %}
-{% set version = "1.0.3" %}
-{% set sha256 = "bda921f71366246e08235131aefa9b6272c168d886babae71ed4509be884c370" %}
+{% set version = "1.0.4" %}
+{% set sha256 = "bfb92520109af44f5f066fd8dd5e05eda5918d8c771c03a65dad7a7feb178415" %}
 
 package:
   name: {{ name|lower }}
@@ -38,7 +38,7 @@ about:
 
   description: |
     Array2GIF provides a single top-level function, `write_gif()`, to
-    write a 3-D NumPy array to a GIF, or a list of these arrays to an
+    write a 3-D NumPy array to a GIF, or a 4-D array / list of 3-D arrays to an
     animated GIF.  It works for me - just small animations of thermodynamics
     simulations.
     It is pure Python code that depends on NumPy.
